@@ -7,14 +7,16 @@ class GameWordsListView(ListView):
     model = GameWords
 
 
-# class UserCreateView(CreateView):
-#     model = GameWords
-#     fields = (
-#         "name_of_gamer",
-#         "word",
-#     )
 #
-#     success_url = reverse_lazy("words:gamewords_list")
+
+class GameWordsUpdateView(UpdateView):
+    model = GameWords
+    fields = (
+        "name_of_gamer",
+        "word",
+    )
+
+    success_url = reverse_lazy("words:gamewords_list")
 
 # class UserDeleteView(DeleteView):
 #    model = Gamer

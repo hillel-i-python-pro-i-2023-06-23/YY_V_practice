@@ -3,6 +3,16 @@
 {% block content %}
     <h1>Game words</h1>
 
+    <form method="POST" style="margin-bottom: 1em;">
+        {% csrf_token %}
+        <label>
+            <span>Your word</span>
+            <input type="string" name="word" value=""/>
+        </label>
+
+        <button type="submit">Add</button>
+    </form>
+
 {% include "words/_gamewords_list_base.html" with gamer_list=object_list %}
 
 {% endblock %}
