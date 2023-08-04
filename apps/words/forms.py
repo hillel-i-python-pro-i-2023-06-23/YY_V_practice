@@ -1,11 +1,8 @@
 from django import forms
 
-from apps.users.models import Gamer
+from apps.words.models import GameWords
 
 
 class GameWordsForm(forms.ModelForm):
     class Meta:
-        model = Gamer
-        widgets = {
-            'password': forms.PasswordInput(),
-        }
+        model = GameWords
