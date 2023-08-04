@@ -1,15 +1,15 @@
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 
-from apps.users.models import User
+from apps.users.models import Gamer
 
 
 class UsersListView(ListView):
-    model = User
+    model = Gamer
 
 
 class UserCreateView(CreateView):
-    model = User
+    model = Gamer
     fields = (
         "name",
         "email",
@@ -20,7 +20,7 @@ class UserCreateView(CreateView):
 
 
 class UserUpdateView(UpdateView):
-    model = User
+    model = Gamer
     fields = (
         "name",
         "email",
@@ -35,5 +35,5 @@ class UserUpdateView(UpdateView):
 
 
 class UserDeleteView(DeleteView):
-    model = User
+    model = Gamer
     success_url = reverse_lazy("users:user_list")
