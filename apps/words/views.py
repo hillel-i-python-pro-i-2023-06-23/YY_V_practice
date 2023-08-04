@@ -16,7 +16,6 @@ class GameWordsListView(ListView):
 #
 #     success_url = reverse_lazy("words:gamewords_list")
 
-
-#class UserDeleteView(DeleteView):
+# class UserDeleteView(DeleteView):
 #    model = Gamer
 #    success_url = reverse_lazy("users:user_list")

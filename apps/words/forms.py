@@ -6,3 +6,12 @@ from apps.words.models import GameWords
 class GameWordsForm(forms.ModelForm):
     class Meta:
         model = GameWords
+        fields = (
+            "name_of_gamer",
+            "word",
+        )
+
+class UpdateWord(forms.Form):
+    word = forms.CharField(
+        label=word
+    )
