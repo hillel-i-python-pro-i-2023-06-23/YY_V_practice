@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from apps.words import views
 
 app_name = "users"
 

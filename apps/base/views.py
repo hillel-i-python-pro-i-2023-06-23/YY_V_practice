@@ -8,10 +8,10 @@ class HomepageView(TemplateView):
         context = super().get_context_data(**kwargs)
 
         context.update(
-            greeting_text="We happy to see you in our greatest game 'GUESS THE NUMBER'!"
+            greeting_text="We happy to see you in our greatest words 'GUESS THE NUMBER'!"
                           "Rules very easy: You must to guess the number from 0 to 100. You have 5 attempts!"
                           "Welcome! This is Yevhen Yalovenko Django base project."
-                          "If you're enter non correct number - game inform about it."
+                          "If you're enter non correct number - words inform about it."
                           "You have 100 points at start and wrong attempt cost -20 point."
                           "Good luck!!!",
             #
@@ -28,7 +28,7 @@ class AboutUsView(TemplateView):
         context = super().get_context_data(**kwargs)
 
         context.update(
-            about="This is symple console game. We just start",
+            about="This is symple console words. We just start",
             #
             title="About us",
         )

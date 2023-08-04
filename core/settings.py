@@ -45,7 +45,7 @@ DJANGO_APPS = [
 
 LOCAL_APPS = [
     "apps.base",
-    "apps.users",
+    "apps.words"
 ]
 
 THIRD_PARTY_APPS = []

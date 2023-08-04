@@ -1,0 +1,24 @@
+{#<div>#}
+{#    <a href="{% url 'words:gamers_create' %}">#}
+{#        <button>Create</button>#}
+{#    </a>#}
+{#</div>#}
+
+<ol>
+    {% for gamer in gamer_list %}
+        <li>
+            <div style="display: flex; flex-flow: row;">
+                <div style="margin: .2em;">
+                    <b><span>{{ gamer.name_of_gamer }}</span></b>
+                    <br>
+                    <span>{{ gamer.created_at }}</span>
+                </div>
+{#                <div style="margin: .2em;">#}
+{#                    <a href="{% url 'gamer:gamers_delete' user.pk %}">#}
+{#                        <button>Delete</button>#}
+{#                    </a>#}
+{#                </div>#}
+            </div>
+        </li>
+    {% endfor %}
+</ol>
